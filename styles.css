@@ -1,0 +1,54 @@
+html {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    color: #1A1B1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.hello-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.hello-header-introduction {
+    font-weight: 400;
+}
+
+.bea-header {
+    background-image: linear-gradient(180deg, #fffaa3, #fffaa3);
+}
+
+a {
+    color: #1A1B1F;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.lead {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    max-width: 573.84px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
