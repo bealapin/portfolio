@@ -1,85 +1,105 @@
-html {
-    min-height: 100%;
-    height: 100%;
-}
-
+/*-----------------------Work starts----------------------*/
 body {
-    height: 100%;
-    min-height: 100%;
-    background-color: #fff;
-    color: #1A1B1F;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+/*-----------------------Work ends----------------------*/
+
+/*-----------------------About starts----------------------*/
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+p {
+    line-height: 1.8;
+    margin-top: 36px ;
+}
+.images img {
+    width: 100%;
+}
+.about-me{
+    width: 40%;
+    padding-right: 2rem;
+}
+.images {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 16rem);
+    grid-gap: 20px;
+}
+.images-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.hello-header {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:none;
 }
-.hello-header a {
-    color: #1A1B1F;
+.list-group-item div {
+    width: 40%;
 }
-
-.hello-header a:hover {
-    text-decoration: none;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+.no {
+    width: 10%;
 }
-
-.hello-header-introduction {
-    font-weight: 400;
-}
-
-.lead a {
-    color: #1A1B1F;
-    text-decoration: none;
-    border-bottom: 1px solid #1A1B1F;
+.title {
+    width: 50%;
 }
 
 
-
-.lead a:hover {
-    background-image: linear-gradient(180deg, #f4f4f4, #f5f5f5);
-}
-
-
-.bea-header {
-    background-image: linear-gradient(180deg, #fffaa3, #fffaa3);
-}
-.main {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100.84px;
-
-}
-.lead {
-    padding-left: 15px;
-
-}
-
-.portfolio {
-    margin-top: 10rem;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.gaggl-explore img {
-    box-shadow: 1px 1px 23px 0 rgba(0, 0, 0, 0.2);
-}
-
-.img-responsive {
-    display: block;
-    max-width: 80%;
-    height: auto;
-}
-@media (max-width:991.98px) {
-    .img-responsive {
-        max-width: 100%;
-        min-width: auto;
+@media only screen and (max-width: 1024px) {
+    .about-me{
+        width: 33%;
+    }
+    .images {
+        width: 67%;
+        display: grid;
+        grid-template-columns: repeat(2, 19rem);
+        grid-gap: 20px;
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .about-me{
+        width: 40%;
+    }
+    .images {
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 12rem);
+        grid-gap: 20px;
+    }
+    .list-group-item {
+        flex-direction: column;
+    }
+    .list-group-item div {
+        width: 100%;
+    }
+    .no {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .about{
+        flex-direction: column;
+    }
+    .about-me{
+        width: 100%;
+        padding: 0;
+    }
+    .images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 10rem);
+        grid-gap: 20px;
+    }
+}
+
+/*-----------------------About ends----------------------*/
